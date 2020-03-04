@@ -48,24 +48,30 @@ public class MobilMatic {
         }
     }
     
-        public void gas(){
+        public int gas(){
         if (perseneleng.equals("D")) {
             kecepatan = kecepatan + 5 ;
+            return kecepatan;
           
         } else if (perseneleng.equals("R")){
-            kecepatan = kecepatan - 5 ; 
+            kecepatan = kecepatan - 5 ;
+            return kecepatan;
         } else {
             kecepatan = 0 ;
+            return kecepatan;
         }
     }
         
-            public void rem(){
+        public int rem(){
         if (kecepatan < 0) {
             kecepatan = kecepatan + 5 ;
+            return kecepatan;
         } else if(kecepatan > 0) {
             kecepatan = kecepatan - 5;
+            return kecepatan ;
         } else {
             kecepatan = 0 ;
+            return kecepatan;
         }
     }
 
