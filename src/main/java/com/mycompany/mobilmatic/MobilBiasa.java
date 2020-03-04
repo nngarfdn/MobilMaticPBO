@@ -39,25 +39,31 @@ public class MobilBiasa {
         return perseneleng;
     }
     
-    public void gas(){
+    public int gas(){
         if (perseneleng.equals("1") || perseneleng.equals("2") || perseneleng.equals("3")
                 || perseneleng.equals("4") || perseneleng.equals("5")) {
             kecepatan = kecepatan + 5 ;
+            return kecepatan;
           
         } else if (perseneleng.equals("R") && kecepatan < 0){
             kecepatan = kecepatan - 5 ; 
+            return kecepatan;
         } else {
             kecepatan = 0 ;
+            return kecepatan;
         }
     }
     
-    public void rem(){
+    public int rem(){
         if (kecepatan < 0) {
             kecepatan = kecepatan + 5 ;
+            return kecepatan;
         } else if(kecepatan > 0) {
             kecepatan = kecepatan - 5;
+            return kecepatan;
         } else {
             kecepatan = 0 ;
+            return kecepatan;
         }
     }
     
